@@ -1,4 +1,4 @@
-package Object_Oriented.Ob_Or_1;
+package Object_Oriented.Ob_Or_1.Private_Public;
 
 public class Person {      // ✅ 외부에서 접근 불가 
 
