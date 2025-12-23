@@ -1,0 +1,29 @@
+- `부모타입`으로 `자식타입`을 다룰 수 있는 이유는 자동으로 `형변환(Casting)` 이 발생했기 때문입니다.
+- 자식타입 → 부모타입: 업캐스팅(`UpCasting`)
+- 부모타입 → 자식타입: 다운캐스팅(`DownCasting`)
+
+부모타입으로 자식타입을 다룰 수 있는 이유는 업캐스팅(UpCasting) 때문입니다.
+public class Main {
+    public static void main(String[] args) {
+
+        // 다형성 활용
+        Animal animal = new Cat(); // ✅ 자동 형 변환
+        animal.exist(); // ✅
+        animal.makeSound(); // ✅
+    }
+}
+
+업캐스팅(UpCasting)의 주의사항
+**업캐스팅은 부모의 타입으로 데이터를 다룰 수 있지만 자식 클래스의 고유기능을 활용할 수 없습니다.** 
+
+- 자식 클래스의 고유 기능을 사용하려면 **`다운캐스팅`** 이 필요합니다.
+public class Main {
+    public static void main(String[] args) {
+
+        // 다형성 활용
+        Animal animal = new Cat(); // ✅ 자동 형 변환
+        animal.exist();
+        animal.makeSound();
+        animal.scratch(); // ❌ 사용 불가
+    }
+}
