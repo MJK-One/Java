@@ -1,0 +1,6 @@
+- **RuntimeException - UncheckedException**
+    - `RuntimeException` 을 상속받는 모든 예외를 `UncheckedException` 이라고 합니다.
+    - 예외처리를 컴파일러가 확인하지 않습니다.
+- **Exception - CheckedException**
+    - `Exception` 클래스를 직접 상속받는 모든 예외를 `CheckedException` 이라고합니다. `RuntimeException`과 `RuntimeException` 을 상속받은 예외는 제외합니다.
+    - 예외처리를 컴파일러가 확인해 줍니다.
