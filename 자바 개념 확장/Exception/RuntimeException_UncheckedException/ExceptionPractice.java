@@ -1,4 +1,4 @@
-package try_catch_Act;
+package RuntimeException_UncheckedException;
 
 public class ExceptionPractice {
     public void callUncheckedException() {

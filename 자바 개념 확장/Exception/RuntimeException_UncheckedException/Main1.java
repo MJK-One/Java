@@ -1,4 +1,4 @@
-package try_catch_Act;
+package RuntimeException_UncheckedException;
 
 public class Main1 {
     public static void main(String[] args) {
