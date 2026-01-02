@@ -1,0 +1,9 @@
+왜 필요한지 `Student` 와 `Camp` 예시를 통해 학습.
+- `camp.getStudent()` 는 `null` 을 반환할 수 있는 메서드입니다.
+- 학생이 없는 경우 `null`을 반환하면 `NPE(NullPointerException)`가 발생합니다.
+- `null`인 객체에서 `student.getName()`을 호출하는 것은 존재하지 않는 객체의 메서드를 실행하려는 것입니다.
+
+⚠️
+`NullPointerException`  을 방지해야 하는 이유
+- `NPE` 예외는 런타임 예외이고 컴파일러가 잡아주지 못합니다.
+- 예외가 발생했을 때 처리해 주지 않으면 프로그램이 종료됩니다.
